@@ -174,7 +174,7 @@ def with_computer(game_board):
     game_board = Tk()
     game_board.title("Tic Tac Toe")
     game_board.resizable(False, False)
-    game_board.iconbitmap("C:/Users/KATTAKART/Downloads/favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     marker1 = Button(game_board, text="Player : X", width=7,state=DISABLED)
     marker1.grid(row=1, column=1)
     marker2 = Button(game_board, text="Computer : O", width=7, state=DISABLED)
@@ -188,7 +188,7 @@ def with_player(game_board):
     game_board = Tk()        # Displays the game window interface
     game_board.title("Tic Tac Toe")
     game_board.resizable(False, False) # Disabling the resize of the gridboard
-    game_board.iconbitmap("C:\\Users\\KATTAKART\\Downloads\\favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     marker1 = Button(game_board, text="Player 1 : X", width=7,state=DISABLED )
     marker1.grid(row=1, column=1)
     marker2 = Button(game_board, text="Player 2 : O", width=7,state=DISABLED)
@@ -201,9 +201,9 @@ def play():
     menu = Tk()
     menu.geometry("500x500")
     menu.title("Tic Tac Toe")
-    menu.iconbitmap("C:/Users/KATTAKART/Downloads/favicon.ico")
+    menu.iconbitmap("favicon.ico")
     menu.resizable(False,False)
-    menu.img = Image.open("C:\\Users\\KATTAKART\\Downloads\\Temp-500x500.jpg")   #Setting up the background image
+    menu.img = Image.open("Temp-500x500.jpg")   #Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
     welcome_frame = Label(menu, image=menu.bg)
     welcome_frame.pack(fill=BOTH, expand=True)
@@ -242,7 +242,7 @@ def play():
     toggle_button.pack(pady=30)
 
     def play_sound(): # Defining the function to play music.
-        pygame.mixer.music.load("C:/Users/KATTAKART/Downloads/Happy-Whistling-Ukulele.mp3") #Loading the music
+        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3") #Loading the music
         pygame.mixer.music.play()
 
 
